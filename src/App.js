@@ -6,8 +6,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header loading-background">
-        <img src={logo2} className="App-logo" alt="logo" />
-        <img src={logo} className="App-logo" alt="logo" />
+        <img style={{marginTop: "0vh"}} src={logo2} className="App-logo" alt="logo" />
+        <img src={logo} style={{marginTop: "0vw"}} className="App-logo zoom-image" alt="logo" />
       </header>
     </div>
   );

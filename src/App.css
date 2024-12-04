@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 70vmin;
+  height: 40vmin;
   pointer-events: none;
 }
 .App-header {
@@ -15,6 +15,28 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1); /* Tamaño normal */
+  }
+  50% {
+    transform: scale(0.95); /* Zoom in */
+  }
+  100% {
+    transform: scale(1); /* Regresa al tamaño normal */
+  }
+}
+
+.zoom-image {
+  width: 200px;
+  min-height: 200px;
+  height: auto; /* Mantiene la proporción de la imagen */
+  display: block; /* Centra en el contenedor si es necesario */
+  margin: 0 auto; /* Opcional: centra en el contenedor */
+  animation: zoomInOut 2s infinite; /* Efecto infinito */
+  transition: transform 1s ease; /* Suaviza los cambios */
 }
 
 .loading-background {
@@ -32,5 +54,13 @@
   }
   150% {
     background-color: #242b4b; 
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .App-logo {
+    height: 60vmin !important;
+    pointer-events: none;
   }
 }
