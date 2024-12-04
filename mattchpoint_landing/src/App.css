@@ -19,32 +19,18 @@
 
 .loading-background {
   width: 100%; /* O ajusta al tamaño necesario */
-  height: 100vh; /* O ajusta según el contenedor */
-  animation: loadingBackground 1.5s infinite; /* Ciclo infinito */
+  height: 100vh; 
+  animation: loadingBackground 2s infinite; 
 }
 
 @keyframes loadingBackground {
   0% {
-    background-color: #682078f1; /* Color inicial */
+    background-color: #242b4b;
   }
   50% {
-    background-color: #093ba0; /* Color intermedio */
+    background-color: #242b4bf0;
   }
-  100% {
-    background-color: #682078f1; /* Regresa al color inicial */
-  }
-}
-
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  150% {
+    background-color: #242b4b; 
   }
 }
